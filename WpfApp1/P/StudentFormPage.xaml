@@ -6,9 +6,12 @@
       xmlns:local="clr-namespace:WpfApp1.P"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:validators="clr-namespace:WpfApp1.Valid"
       Title="StudentFormPage">
 
     <Grid>
+        
         <StackPanel>
             <StackPanel>
                 <Label>Имя</Label>
@@ -16,15 +19,92 @@
             </StackPanel>
             <StackPanel>
                 <Label>Login</Label>
-                <TextBox Text="{Binding Login}"/>
+                <TextBox x:Name="LogTB">
+                    <TextBox.Text>
+                        <Binding Path="Login" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:Login/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+                              FontSize="12"
+                              ItemsSource="{Binding ElementName=LogTB, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+
+                </ItemsControl>
+
+                
             </StackPanel>
             <StackPanel>
                 <Label>Email</Label>
-                <TextBox Text="{Binding Email}"/>
+                <TextBox x:Name="EmailTB">
+                    <TextBox.Text>
+                        <Binding Path="Email" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:ContainDog/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+              FontSize="12"
+              ItemsSource="{Binding ElementName=EmailTB, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+
+                </ItemsControl>
             </StackPanel>
             <StackPanel>
                 <Label>Пароль</Label>
-                <DatePicker SelectedDate="{Binding Password}"/>
+                <TextBox x:Name="PassTB">
+                    <TextBox.Text>
+                        <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:Password/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red"
+              FontSize="12"
+              ItemsSource="{Binding ElementName=PassTB, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+
+                </ItemsControl>
+            </StackPanel>
+            <StackPanel>
+                <Label>Дата Регистрации</Label>
+                <DatePicker x:Name="RegTB" DisplayDateStart="{x:Static sys:DateTime.Today}">
+                    <DatePicker.SelectedDate>
+                        <Binding Path="CreatedAt" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:Nopast/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </DatePicker.SelectedDate>
+                </DatePicker>
+                <ItemsControl Foreground="Red"
+                              FontSize="12"
+                              ItemsSource="{Binding ElementName=RegTB, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" TextWrapping="wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
             <StackPanel>
                 <Button Click="save">Сохранить в БД</Button>

@@ -12,7 +12,7 @@ namespace WpfApp1
     {
         private readonly DBC _db = BaseDbService.Instance.Context;
         public ObservableCollection<Student> Students { get; set; } = new();
-        public void StudentsService()
+        public StudentSirvice()
         {
             GetAll();
         }
@@ -20,10 +20,12 @@ namespace WpfApp1
         {
             var _student = new Student
             {
-                FirstName = student.FirstName,
-                LastName = student.LastName,
-                MiddleName = student.MiddleName,
-                Birthday = student.Birthday,
+                Name = student.Name,
+                Login = student.Login,
+                Email= student.Email,
+                Password = student.Password,
+                CreatedAt = student.CreatedAt,
+
             };
             _db.Add<Student>(_student);
             Commit();
