@@ -48,12 +48,12 @@ namespace WpfApp1
 
 
 
-        private DateTime _createdat;
+        private DateTime _createdat = DateTime.Now;
         public DateTime CreatedAt
         {
             get => _createdat;
             set => SetProperty(ref _createdat, value);
-        }
+        } 
 
     }
 }

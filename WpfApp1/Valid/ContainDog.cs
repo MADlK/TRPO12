@@ -10,9 +10,11 @@ namespace WpfApp1.Valid
 {
     public class ContainDog :ValidationRule
     {
+        public StudentSirvice p { get; set; } = new();
         public override ValidationResult Validate (object value, CultureInfo cultureInfo)
         {
-            var input = (value ?? "").ToString().Trim();
+            
+        string input = (value ?? "").ToString().Trim();
             if (input == string.Empty)
             {
                 return new ValidationResult(false, "Ввод Почты обязателен обязателен");
@@ -21,8 +23,12 @@ namespace WpfApp1.Valid
             {
                 return new ValidationResult(false, "Нет знака @");
             }
-            
-            return ValidationResult.ValidResult;
+            if (p.Students.Any(x => x.Email == input))
+            {
+                return new ValidationResult(false, "такая почта уже существует");
+            }
+
+                return ValidationResult.ValidResult;
 
         }
     }

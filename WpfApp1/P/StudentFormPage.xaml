@@ -87,7 +87,7 @@
             </StackPanel>
             <StackPanel>
                 <Label>Дата Регистрации</Label>
-                <DatePicker x:Name="RegTB" DisplayDateStart="{x:Static sys:DateTime.Today}">
+                <DatePicker x:Name="RegTB"  DisplayDateStart="{x:Static sys:DateTime.Today}">
                     <DatePicker.SelectedDate>
                         <Binding Path="CreatedAt" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -107,7 +107,18 @@
                 </ItemsControl>
             </StackPanel>
             <StackPanel>
-                <Button Click="save">Сохранить в БД</Button>
+                
+                <Button Click="save" Content="Сохранить в БД">
+                    <Button.Style>
+                        <Style BasedOn="{StaticResource MaterialDesignFlatLightBgButton}" TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="Validation.HasError" Value="True">
+                                    <Setter Property="IsEnabled" Value="False"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
                 <Button Click="back">Назад</Button>
             </StackPanel>
         </StackPanel>
