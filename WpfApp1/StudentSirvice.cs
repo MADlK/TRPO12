@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -22,18 +23,24 @@ namespace WpfApp1
             {
                 Name = student.Name,
                 Login = student.Login,
-                Email= student.Email,
+                Email = student.Email,
                 Password = student.Password,
                 CreatedAt = student.CreatedAt,
+                Profile = student.Profile,
+                RoleId = 1,
 
             };
             _db.Add<Student>(_student);
             Commit();
+            Students.Add(_student);
         }
         public int Commit () => _db.SaveChanges();
         public void GetAll ()
         {
-            var students = _db.Students.ToList();
+            var students = _db.Students
+                .Include(s => s.Profile)
+                .Include(s => s.Role)
+                .ToList();
             Students.Clear();
             foreach (var student in students)
             {

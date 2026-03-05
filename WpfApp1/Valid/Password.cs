@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using WpfApp1.P;
 
 namespace WpfApp1.Valid
 {
@@ -17,6 +18,7 @@ namespace WpfApp1.Valid
             var input = (value ?? "").ToString().Trim();
             if (input == string.Empty)
             {
+                
                 return new ValidationResult(false, "Ввод Пароля обязателен");
             }
             int count = 0;
@@ -31,20 +33,24 @@ namespace WpfApp1.Valid
             }
             if (count<1)
             {
+                
                 return new ValidationResult(false, "Нет спец. символов");
             }
             
 
             if (!input.Any(Char.IsUpper))
             {
+                
                 return new ValidationResult(false, "Нет букв в верхнем регистре");
             }
             if (!input.Any(Char.IsLower))
             {
+                
                 return new ValidationResult(false, "Нет букв в нижнем регистре");
             }
             if (input.Length < 8)
             {
+                
                 return new ValidationResult(false, "Пароль короткий");
             }
            

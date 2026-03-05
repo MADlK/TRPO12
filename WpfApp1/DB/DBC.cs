@@ -10,15 +10,28 @@ namespace WpfApp1.DB
     public class DBC : DbContext
     {
         public DbSet<Student> Students { get; set; }
+        public DbSet<UserProfile> Profiles { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=sql.ects;Database=MABD12;User Id = student_09;" +
-            "Password = student_09;" +
-            "TrustServerCertificate = True;");
+            optionsBuilder.UseSqlServer("Server=sql.ects;Database=MABD13;User Id=student_09;" +
+            "Password=student_09;" +
+            "TrustServerCertificate=True;");
 
             //optionsBuilder.UseSqlServer("Server=localhost;Database=MADBD12;Trusted_Connection=True;" +
             //"TrustServerCertificate = True;");
+        }
+        protected override void OnModelCreating (ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Student>().HasOne(s => s.Profile)
+                .WithOne(ps => ps.Student)
+                .HasForeignKey<UserProfile>(ps => ps.StudentId);
+
+            modelBuilder.Entity<Role>()
+                .HasMany(r => r.Students)
+                .WithOne(s => s.Role)
+                .HasForeignKey(s => s.RoleId);
         }
     }
 }

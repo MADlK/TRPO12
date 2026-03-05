@@ -20,6 +20,7 @@ namespace WpfApp1.P
     /// </summary>
     public partial class StudentFormPage :Page
     {
+        
         private StudentSirvice _service = new();
         public Student _student = new();
         bool isEdit = false;
@@ -33,17 +34,34 @@ namespace WpfApp1.P
                 _student = _editStudent;
                 isEdit = true;
             }
-
+            if (_student.Profile == null)
+                _student.Profile = new();
             DataContext = _student;
         }
 
         private void save (object sender, RoutedEventArgs e)
         {
-            if (isEdit)
-                _service.Commit();
-            else
-                _service.Add(_student);
-            NavigationService.GoBack();
+            
+            if (Validation.GetHasError(UName) || Validation.GetHasError(LogTB) || Validation.GetHasError(EmailTB) || Validation.GetHasError(PassTB) || Validation.GetHasError(RegTB))
+            {
+                MessageBox.Show("Если есть ошибка создать не получится");
+                return;
+            }
+            
+            
+
+                if (isEdit)
+                    _service.Commit();
+                else
+                    _service.Add(_student);
+                NavigationService.GoBack();
+
+            
+            
+           
+
+
+
         }
         private void back (object sender, RoutedEventArgs e)
         {

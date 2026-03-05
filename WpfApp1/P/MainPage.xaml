@@ -32,6 +32,11 @@
                             <TextBlock Text="{Binding Login}"/>
                             <TextBlock Text="{Binding Email}"/>
                             <TextBlock Text="{Binding CreatedAt, StringFormat={}{0:dd.MM.yyyy}}"/>
+                            <TextBlock Text="{Binding Profile.Phone}"/>
+                            <TextBlock Text="{Binding Profile.AvatarUrl}"/>
+                            <TextBlock Text="{Binding Profile.Birthday, StringFormat={}{0:dd.MM.yyyy}}"/>
+                            <TextBlock Text="{Binding Profile.Bio}"/>
+                            <TextBlock Text="{Binding Role.Title}"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>

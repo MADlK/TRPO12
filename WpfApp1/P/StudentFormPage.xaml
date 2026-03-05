@@ -4,22 +4,25 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.P"
+      xmlns:pages="clr-namespace:WpfApp1.P"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       xmlns:sys="clr-namespace:System;assembly=mscorlib"
       xmlns:validators="clr-namespace:WpfApp1.Valid"
       Title="StudentFormPage">
 
-    <Grid>
+    <Grid Background="White">
         
         <StackPanel>
             <StackPanel>
                 <Label>Имя</Label>
-                <TextBox Text="{Binding Name}"/>
+                <TextBox x:Name="UName" Text="{Binding Name}"/>
             </StackPanel>
             <StackPanel>
                 <Label>Login</Label>
                 <TextBox x:Name="LogTB">
+                   
+                    
                     <TextBox.Text>
                         <Binding Path="Login" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -87,7 +90,7 @@
             </StackPanel>
             <StackPanel>
                 <Label>Дата Регистрации</Label>
-                <DatePicker x:Name="RegTB"  DisplayDateStart="{x:Static sys:DateTime.Today}">
+                <DatePicker x:Name="RegTB"  >
                     <DatePicker.SelectedDate>
                         <Binding Path="CreatedAt" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
@@ -106,6 +109,38 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </StackPanel>
+
+
+
+
+
+
+            <StackPanel>
+                <Label>Номер телефона</Label>
+                <TextBox Text="{Binding Profile.Phone}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>Ссылка на картинку</Label>
+                <TextBox Text="{Binding Profile.AvatarUrl}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>День рождения</Label>
+                <TextBox Text="{Binding Profile.Birthday}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>Краткое описание</Label>
+                <TextBox Text="{Binding Profile.Bio}"/>
+            </StackPanel>
+
+
+
+
+
+
+
+
+
+
             <StackPanel>
                 
                 <Button Click="save" Content="Сохранить в БД">
@@ -121,6 +156,7 @@
                 </Button>
                 <Button Click="back">Назад</Button>
             </StackPanel>
+            <TextBlock Text="{Binding haser}"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -54,6 +54,31 @@ namespace WpfApp1
             get => _createdat;
             set => SetProperty(ref _createdat, value);
         } 
+        private UserProfile _profile;
+        public UserProfile Profile
+        {
+            get => _profile;
+            set => SetProperty(ref _profile, value);
+        }
 
+
+
+
+
+
+
+
+        private int _roleid;
+        public int RoleId
+        {
+            get => _roleid;
+            set => SetProperty(ref _roleid, value);
+        }
+        private Role _role;
+        public Role Role
+        {
+            get => _role;
+            set => SetProperty(ref _role, value);
+        }
     }
 }
