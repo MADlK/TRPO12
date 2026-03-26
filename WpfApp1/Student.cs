@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,6 +80,13 @@ namespace WpfApp1
         {
             get => _role;
             set => SetProperty(ref _role, value);
+        }
+
+        private ObservableCollection<UserInterestGroup> _UserInterestGroups;
+        public ObservableCollection<UserInterestGroup> UserInterestGroups
+        {
+            get => _UserInterestGroups;
+            set => SetProperty(ref _UserInterestGroups, value);
         }
     }
 }

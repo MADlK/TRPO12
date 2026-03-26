@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace WpfApp1
@@ -26,6 +27,7 @@ namespace WpfApp1
             set => SetProperty(ref _avatarUrl, value);
         }
 
+        
 
         private int _phone;
         public int Phone
@@ -82,6 +84,8 @@ namespace WpfApp1
                 SetProperty(ref _student, value);
             }
         }
+
+
 
     }
 }

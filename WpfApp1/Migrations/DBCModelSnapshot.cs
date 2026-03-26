@@ -22,6 +22,27 @@ namespace WpfApp1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("WpfApp1.InterstGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("InterestGroups");
+                });
+
             modelBuilder.Entity("WpfApp1.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -76,6 +97,27 @@ namespace WpfApp1.Migrations
                     b.ToTable("Students");
                 });
 
+            modelBuilder.Entity("WpfApp1.UserInterestGroup", b =>
+                {
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InterestGroupId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsModerator")
+                        .HasColumnType("bit");
+
+                    b.Property<DateOnly>("JoinedAt")
+                        .HasColumnType("date");
+
+                    b.HasKey("StudentId", "InterestGroupId");
+
+                    b.HasIndex("InterestGroupId");
+
+                    b.ToTable("UserInterestGroups");
+                });
+
             modelBuilder.Entity("WpfApp1.UserProfile", b =>
                 {
                     b.Property<int>("Id")
@@ -121,6 +163,25 @@ namespace WpfApp1.Migrations
                     b.Navigation("Role");
                 });
 
+            modelBuilder.Entity("WpfApp1.UserInterestGroup", b =>
+                {
+                    b.HasOne("WpfApp1.InterstGroup", "InterestGroup")
+                        .WithMany("UserInterestGroups")
+                        .HasForeignKey("InterestGroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WpfApp1.Student", "Student")
+                        .WithMany("UserInterestGroups")
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("InterestGroup");
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("WpfApp1.UserProfile", b =>
                 {
                     b.HasOne("WpfApp1.Student", "Student")
@@ -132,6 +193,11 @@ namespace WpfApp1.Migrations
                     b.Navigation("Student");
                 });
 
+            modelBuilder.Entity("WpfApp1.InterstGroup", b =>
+                {
+                    b.Navigation("UserInterestGroups");
+                });
+
             modelBuilder.Entity("WpfApp1.Role", b =>
                 {
                     b.Navigation("Students");
@@ -141,6 +207,8 @@ namespace WpfApp1.Migrations
                 {
                     b.Navigation("Profile")
                         .IsRequired();
+
+                    b.Navigation("UserInterestGroups");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,396 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\userinterestgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:userinterestgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\add_interestgroup_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\add_interestgroup_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\userinterestgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:userinterestgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\studentformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\studentformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\studentformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\studentformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\interstgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:interstgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\studentsirvice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:studentsirvice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\db\\dbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:db\\dbc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\interstgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:interstgroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\st310-09\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\all_interestgrioup_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\all_interestgrioup_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\all_interestgrioup_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\all_interestgrioup_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\p\\add_interestgroup_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:p\\add_interestgroup_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|c:\\users\\st310-09\\desktop\\trpo12\\wpfapp1\\valid\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4799CC35-36BE-4CC1-947C-91D7C6CC4BC6}|WpfApp1.csproj|solutionrelative:valid\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 433,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Add_InterestGroup_Page.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\Add_InterestGroup_Page.xaml",
+              "RelativeDocumentMoniker": "P\\Add_InterestGroup_Page.xaml",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\Add_InterestGroup_Page.xaml",
+              "RelativeToolTip": "P\\Add_InterestGroup_Page.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:29:29.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InterstGroup.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\InterstGroup.cs",
+              "RelativeDocumentMoniker": "InterstGroup.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\InterstGroup.cs",
+              "RelativeToolTip": "InterstGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T07:55:01.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\MainPage.xaml",
+              "RelativeDocumentMoniker": "P\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\MainPage.xaml",
+              "RelativeToolTip": "P\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:55:54.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "P\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\MainPage.xaml.cs",
+              "RelativeToolTip": "P\\MainPage.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAxwC0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T08:42:57.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentFormPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\StudentFormPage.xaml",
+              "RelativeDocumentMoniker": "P\\StudentFormPage.xaml",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\StudentFormPage.xaml",
+              "RelativeToolTip": "P\\StudentFormPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:33:07.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserInterestGroupService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\UserInterestGroupService.cs",
+              "RelativeDocumentMoniker": "UserInterestGroupService.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\UserInterestGroupService.cs",
+              "RelativeToolTip": "UserInterestGroupService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T08:27:43.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\Student.cs",
+              "RelativeToolTip": "Student.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwFUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:09:01.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ObservableObject.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\ObservableObject.cs",
+              "RelativeDocumentMoniker": "ObservableObject.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\ObservableObject.cs",
+              "RelativeToolTip": "ObservableObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T11:22:02.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentFormPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\StudentFormPage.xaml.cs",
+              "RelativeDocumentMoniker": "P\\StudentFormPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\StudentFormPage.xaml.cs",
+              "RelativeToolTip": "P\\StudentFormPage.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:30:15.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:54:33.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserInterestGroup.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\UserInterestGroup.cs",
+              "RelativeDocumentMoniker": "UserInterestGroup.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\UserInterestGroup.cs",
+              "RelativeToolTip": "UserInterestGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T08:11:04.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseDbService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\BaseDbService.cs",
+              "RelativeDocumentMoniker": "BaseDbService.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\BaseDbService.cs",
+              "RelativeToolTip": "BaseDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T09:48:38.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentSirvice.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\StudentSirvice.cs",
+              "RelativeDocumentMoniker": "StudentSirvice.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\StudentSirvice.cs",
+              "RelativeToolTip": "StudentSirvice.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:09:04.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DBC.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\DB\\DBC.cs",
+              "RelativeDocumentMoniker": "DB\\DBC.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\DB\\DBC.cs",
+              "RelativeToolTip": "DB\\DBC.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswDAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T08:35:24.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\Role.cs",
+              "RelativeDocumentMoniker": "Role.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\Role.cs",
+              "RelativeToolTip": "Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T10:04:45.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InterstGroupService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\InterstGroupService.cs",
+              "RelativeDocumentMoniker": "InterstGroupService.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\InterstGroupService.cs",
+              "RelativeToolTip": "InterstGroupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:02:57.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\UserProfile.cs",
+              "RelativeDocumentMoniker": "UserProfile.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\UserProfile.cs",
+              "RelativeToolTip": "UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T09:41:48.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\st310-09\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAABMAAAAAAAAAAAAWwCcAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T08:42:29.924Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "All_InterestGrioup_Page.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\All_InterestGrioup_Page.xaml.cs",
+              "RelativeDocumentMoniker": "P\\All_InterestGrioup_Page.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\All_InterestGrioup_Page.xaml.cs",
+              "RelativeToolTip": "P\\All_InterestGrioup_Page.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T08:03:13.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "All_InterestGrioup_Page.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\All_InterestGrioup_Page.xaml",
+              "RelativeDocumentMoniker": "P\\All_InterestGrioup_Page.xaml",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\All_InterestGrioup_Page.xaml",
+              "RelativeToolTip": "P\\All_InterestGrioup_Page.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:45:47.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\Valid\\Login.cs",
+              "RelativeDocumentMoniker": "Valid\\Login.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\Valid\\Login.cs",
+              "RelativeToolTip": "Valid\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:37:38.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Add_InterestGroup_Page.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\Add_InterestGroup_Page.xaml.cs",
+              "RelativeDocumentMoniker": "P\\Add_InterestGroup_Page.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-09\\Desktop\\TRPO12\\WpfApp1\\P\\Add_InterestGroup_Page.xaml.cs",
+              "RelativeToolTip": "P\\Add_InterestGroup_Page.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:29:32.799Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 427,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

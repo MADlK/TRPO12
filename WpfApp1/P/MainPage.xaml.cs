@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,6 +23,32 @@ namespace WpfApp1.P
     /// </summary>
     public partial class MainPage :Page
     {
+
+        public UserInterestGroupService UIGService { get; set; } = new();
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged ([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
+
+        private Student _selectedStudent;
+        public Student SelectedStudent
+        {
+            get => _selectedStudent;
+            set
+            {
+                _selectedStudent = value;
+                UIGService.GetAll(_selectedStudent.Id);
+                OnPropertyChanged();
+            }
+        }
+        
+     
         public StudentSirvice service { get; set; } = new();
         public Student? student { get; set; } = null;
         public MainPage()
@@ -42,6 +71,7 @@ namespace WpfApp1.P
 
         public void remove(object sender, EventArgs e)
         {
+
             if (student == null)
             {
                 MessageBox.Show("Выберите запись!");
@@ -52,6 +82,7 @@ namespace WpfApp1.P
             {
                 service.Remove(student);
             }
+
         }
 
 
