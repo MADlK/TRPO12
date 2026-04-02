@@ -21,7 +21,7 @@
                     <TextBox.Text>
                         <Binding Path="Title" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
-                                <validators:Login/>
+                                <validators:TitleIG/>
                             </Binding.ValidationRules>
                         </Binding>
                     </TextBox.Text>
@@ -44,7 +44,7 @@
                     <TextBox.Text>
                         <Binding Path="Description" UpdateSourceTrigger="PropertyChanged">
                             <Binding.ValidationRules>
-                                <validators:ContainDog/>
+                                
                             </Binding.ValidationRules>
                         </Binding>
                     </TextBox.Text>

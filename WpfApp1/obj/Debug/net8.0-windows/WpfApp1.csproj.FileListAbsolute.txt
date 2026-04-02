@@ -472,3 +472,5 @@ C:\Users\st310-09\Desktop\TRPO12\WpfApp1\obj\Debug\net8.0-windows\refint\WpfApp1
 C:\Users\st310-09\Desktop\TRPO12\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
 C:\Users\st310-09\Desktop\TRPO12\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
 C:\Users\st310-09\Desktop\TRPO12\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+C:\Users\st310-09\Desktop\TRPO12\WpfApp1\obj\Debug\net8.0-windows\P\AddIGForUser.g.cs
+C:\Users\st310-09\Desktop\TRPO12\WpfApp1\obj\Debug\net8.0-windows\P\AddIGForUser.baml

@@ -21,7 +21,7 @@ namespace WpfApp1.P
     /// <summary>
     /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class MainPage :Page
+    public partial class MainPage :Page, INotifyPropertyChanged
     {
 
         public UserInterestGroupService UIGService { get; set; } = new();
@@ -43,14 +43,14 @@ namespace WpfApp1.P
             set
             {
                 _selectedStudent = value;
-                UIGService.GetAll(_selectedStudent.Id);
+                
                 OnPropertyChanged();
             }
         }
         
      
         public StudentSirvice service { get; set; } = new();
-        public Student? student { get; set; } = null;
+       
         public MainPage()
         {
             InitializeComponent();
@@ -61,18 +61,18 @@ namespace WpfApp1.P
         }
         public void Edit(object sender, EventArgs e)
         {
-            if (student == null)
+            if (SelectedStudent == null)
             {
                 MessageBox.Show("Выберите элемент из списка!");
                 return;
             }
-            NavigationService.Navigate(new StudentFormPage(student));
+            NavigationService.Navigate(new StudentFormPage(SelectedStudent));
         }
 
         public void remove(object sender, EventArgs e)
         {
 
-            if (student == null)
+            if (SelectedStudent == null)
             {
                 MessageBox.Show("Выберите запись!");
                 return;
@@ -80,11 +80,26 @@ namespace WpfApp1.P
             if (MessageBox.Show("Вы действительно хотите удалить запись?", "Удалить?",
             MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
-                service.Remove(student);
+                service.Remove(SelectedStudent);
             }
 
         }
 
+        private void ListView_SelectionChanged (object sender, SelectionChangedEventArgs e)
+        {
+            if(_selectedStudent != null)
+                UIGService.GetAll(_selectedStudent.Id);
+            UIGService.GetAll();
+        }
 
+        private void AddIG_Click (object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddIGForUser((Student)LV.SelectedItem));
+        }
+
+        private void GoGroup (object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new All_InterestGrioup_Page());
+        }
     }
 }

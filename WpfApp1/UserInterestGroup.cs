@@ -48,7 +48,7 @@ namespace WpfApp1
             }
         }
 
-        private DateOnly _JoinedAt;
+        private DateOnly _JoinedAt = DateOnly.FromDateTime(DateTime.Today);
         public DateOnly JoinedAt
         {
             get { return _JoinedAt; }

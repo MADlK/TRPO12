@@ -37,7 +37,18 @@ namespace WpfApp1
             _db.SaveChanges();
         }
         public int Commit () => _db.SaveChanges();
-        public void GetAll (int ID)
+
+
+        public void GetAll ()
+        {
+           
+        }
+
+
+
+
+
+        public void GetAll (int SID)
         {
             var uid = _db.UserInterestGroups
                 .Include(c => c.InterestGroup)
@@ -51,10 +62,35 @@ namespace WpfApp1
             UserInterestGroups.Clear();
             foreach (var _uid in uid)
             {
-                if(_uid.StudentId == ID)
+                if(_uid.StudentId == SID)
                 UserInterestGroups.Add(_uid);
             }
         }
+
+
+     
+        public void GetAllStud ()
+        {
+
+        }
+        public void GetAllStud (int IID)
+        {
+            var uid = _db.UserInterestGroups
+                .Include(c => c.InterestGroup)
+                .Include(c => c.Student)
+                .ThenInclude(cs => cs.Profile)
+                .Include(c => c.Student)
+                .ThenInclude(cs => cs.Role)
+                .ToList();
+
+            UserInterestGroups.Clear();
+            foreach (var _uid in uid)
+            {
+                if (_uid.InterestGroupId == IID)
+                    UserInterestGroups.Add(_uid);
+            }
+        }
+
         public void Remove (UserInterestGroup UserInterestGrop)
         {
             _db.Remove<UserInterestGroup>(UserInterestGrop);

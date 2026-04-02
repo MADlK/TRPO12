@@ -54,7 +54,7 @@ namespace WpfApp1.P
                     _service.Commit();
                 else
                     _service.Add(_student);
-                NavigationService.GoBack();
+                NavigationService.Navigate(new MainPage());
 
             
             

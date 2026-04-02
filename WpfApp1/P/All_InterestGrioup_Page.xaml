@@ -4,28 +4,68 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp1.P"
+      xmlns:all="clr-namespace:WpfApp1"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       DataContext="{Binding RelativeSource={RelativeSource Self}}"
       Title="All_InterestGrioup_Page">
 
+    <Page.Resources>
+        <all:TrueOrFalse x:Key="TRY"/>
+    </Page.Resources>
+    
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
             <Button Click="Add_Click" Content="Добавить" Margin="20 0 0 0"/>
             <Button Click="Edit_Click" Content="Редактировать" Margin="20 0 0 0"/>
+            <Button Click="Back_Click" Content="Назад" Margin="20 0 0 0"/>
             <Button Click="Del_Click" Content="Удалить" Margin="20 0 0 0"/>
         </StackPanel>
 
 
         <ListView Grid.Row="1"
-           Width="500"
+                  Grid.Column="1"
+              Name="LV"
+              SelectionChanged="ListView_SelectionChanged"
+            ItemsSource="{Binding service.UserInterestGroups}"
+            
+            SelectedItem="{Binding SelectedIG}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Student.Name}"/>
+                            <TextBlock Text="{Binding Student.Login}"/>
+                            <TextBlock Text="{Binding Student.Email}"/>
+                            <TextBlock Text="{Binding Student.CreatedAt, StringFormat={}{0:dd.MM.yyyy}}"/>
+                            <TextBlock Text="{Binding Student.Profile.Phone}"/>
+                            <TextBlock Text="{Binding Student.Profile.AvatarUrl}"/>
+                            <TextBlock Text="{Binding Student.Profile.Birthday, StringFormat={}{0:dd.MM.yyyy}}"/>
+                            <TextBlock Text="{Binding Student.Profile.Bio}"/>
+                            <TextBlock Text="{Binding Student.Role.Title}"/>
+                            <TextBlock Text="{Binding JoinedAt}"/>
+                            <TextBlock Text="{Binding IsModerator, Converter={StaticResource TRY}}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView Grid.Row="1"
+           
              ItemsSource="{Binding IGService.InterstGroups}"
              MouseDoubleClick="Edit_Click"
-             SelectedItem="{Binding selectedIG}">
+                  SelectionChanged="ListView_SelectionChanged"
+             SelectedItem="{Binding SelectedIG}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

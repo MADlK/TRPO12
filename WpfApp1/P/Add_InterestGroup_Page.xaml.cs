@@ -47,14 +47,22 @@ namespace WpfApp1.P
             //    MessageBox.Show("Если есть ошибка создать не получится");
             //    return;
             //}
-
-
+            if (Validation.GetHasError(TitleTB) )
+            {
+                MessageBox.Show("Если есть ошибка создать не получится");
+                return;
+            }
+            if(String.IsNullOrEmpty(DescTB.Text) || String.IsNullOrEmpty(TitleTB.Text))
+            {
+                MessageBox.Show("Все поля должны быть заполнены");
+                return;
+            }
 
             if (isEdit)
                 _service.Commit();
             else
                 _service.Add(_student);
-            NavigationService.GoBack();
+            NavigationService.Navigate(new All_InterestGrioup_Page());
 
 
 
